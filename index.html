@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reloj Digital de 12 Horas</title>
+    <link rel="shortcut icon" type="image/x-icon" href="miniLogo.jpg">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrap">
+        <div class="widget">
+            <div class="fecha">
+                <p id="diaSemana" class="diaSemana"></p>
+                <p id="dia" class="dia"></p>
+                <p>de </p>
+                <p id="mes" class="mes"></p>
+                <p>del </p>
+                <p id="year" class="year"></p>
+            </div>
+
+
+            <div class="reloj" id="reloj">
+                    <p id="horas" class="horas"></p>
+                    <p>:</p>
+                    <p id="minutos" class="minutos"></p>
+                    <p>:</p>
+                    <div class="caja-segundos">
+                        <p id="segundos" class="segundos"></p>
+                        <p id="ampm" class="ampm"></p>
+                        
+                    </div>
+            </div>
+
+
+            <div class="completa">
+                <div class="proxima">
+                    <p id="proxima" class="pProxima">as</p>
+                </div>
+
+                <div class="botones0">
+                    <button type="button" class="bBoton" onclick="myFunction3(1)"><span class="tooltiptext" id="myTooltip">Copy to clipboard</span>+1 minuto</button>
+                </div>  
+
+                <div class="botones1">
+                    <button type="button" class="bBoton" onclick="myFunction3(2)"><span class="tooltiptext" id="myTooltip">Copy to clipboard</span>+2 minutos</button>
+                </div> 
+            </div>
+
+            <div class="completa">
+
+                <div class="pCompleta">
+                    <p id="completo" class="pCompleto">as</p>
+                </div>
+
+                <div class="ili0">
+                    <input type="text" class="profit" id="profit">
+                </div>
+                
+                <div class="botones2">
+                    <button type="button" class="bBoton" onclick="myFunction2('profit')"><span class="tooltiptext" id="myTooltip">Copy to clipboard</span>Copiar</button>
+                </div>  
+
+            </div>
+
+            <div class="resumen">
+
+                <h1>Resumen de Actividades Ejecutadas</h1>
+
+
+                <div class="lista">
+                    <ol class="a"> 
+                        <li><input type="checkbox" id="i0"> Reporte de las 6 a.m. </li>
+                        <li><input type="checkbox" id="i1"> Cambio de ATM a M - 8 a.m.</li>
+                        <li><input type="checkbox" id="i2"> Reporte de las 12 p.m</li>
+                        <li><input type="checkbox" id="i3"> Cambio de ATM a T - 3:30 pm</li>
+                        <li><input type="checkbox" id="i4"> Reporte de las 6 p.m</li>
+                        <li><input type="checkbox" id="i5"> Cambio de ATM a N - 7 p.m.</li>
+                        <li><input type="checkbox" id="i6"> Cierre - 10:10 p.m</li>
+                        <li><input type="checkbox" id="i7"> Reporte Final - 10:15 p.m.</li>
+                        <li><input type="checkbox" id="i8"> Cambio de ATM a M 10:30 p.m.</li>
+                    </ol>
+                </div>
+
+                <div class="ili1">
+                    <input type="text" id="ili0">
+                    <input type="text" id="ili1">
+                    <input type="text" id="ili2">
+                    <input type="text" id="ili3">
+                    <input type="text" id="ili4">
+                    <input type="text" id="ili5">
+                    <input type="text" id="ili6">
+                    <input type="text" id="ili7">
+                    <input type="text" id="ili8">
+                </div>
+
+                <div class="botones3">
+                    <button type="button" onclick="myFunction('ili0','i0')">Checked</button>
+                    <button type="button" onclick="myFunction('ili1','i1')">Checked</button>
+                    <button type="button" onclick="myFunction('ili2','i2')">Checked</button>
+                    <button type="button" onclick="myFunction('ili3','i3')">Checked</button>
+                    <button type="button" onclick="myFunction('ili4','i4')">Checked</button>
+                    <button type="button" onclick="myFunction('ili5','i5')">Checked</button>
+                    <button type="button" onclick="myFunction('ili6','i6')">Checked</button>
+                    <button type="button" onclick="myFunction('ili7','i7')">Checked</button>
+                    <button type="button" onclick="myFunction('ili8','i8')">Checked</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="reloj.js"></script>
+</body>
+</html>
